@@ -908,6 +908,7 @@ menu-close:hover .menu-icon-close {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .client-item {
