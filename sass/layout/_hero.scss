@@ -1,0 +1,72 @@
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: var(--bg-color);
+
+    background-image: var(--gra), url(../images/hero-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include retina {
+        background-image: var(--gra), url(../images/hero-mob-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: var(--gra), url(../images/hero-tab.jpg);
+        
+        @include retina {
+             background-image: var(--gra), url(../images/hero-tab-2x.jpg);
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-top: 200px;
+
+        background-image: var(--gra), url(../images/hero.jpg);
+
+        @include retina {
+             background-image: var(--gra), url(../images/hero-2x.jpg);
+             }
+        }
+}
+
+.hero-title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+
+    @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+}
+
+.hero-btn {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+
+    color: var(--title-color);
+    background-color: var(--hover-color);
+
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+        background-color: var(--bg-hero-btn);
+    }        
+}
