@@ -415,11 +415,18 @@ button {
     align-items: center;
     color: var(--second-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-mail,
+.header-tel {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -556,12 +563,17 @@ menu-close:hover .menu-icon-close {
   color: var(--hover-color);
 }
 
+.menu-header-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .menu-header-tel {
   display: block;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--hover-color);
 }
 
@@ -572,6 +584,7 @@ menu-close:hover .menu-icon-close {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--second-color);
 }
 
@@ -631,7 +644,7 @@ menu-close:hover .menu-icon-close {
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
-    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: var(--gra), url(../images/hero.jpg);
   }
 }
@@ -678,13 +691,18 @@ menu-close:hover .menu-icon-close {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .pluses {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .pluses-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
   }
 }
 
@@ -702,7 +720,6 @@ menu-close:hover .menu-icon-close {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -724,7 +741,7 @@ menu-close:hover .menu-icon-close {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .pluses-item {
     width: 270px;
   }
@@ -895,6 +912,12 @@ menu-close:hover .menu-icon-close {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .client-title {
   margin-bottom: 30px;
@@ -902,6 +925,13 @@ menu-close:hover .menu-icon-close {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03e;
+}
+@media screen and (min-width: 1200px) {
+  .client-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients-list {
@@ -1263,7 +1293,7 @@ menu-close:hover .menu-icon-close {
   }
 }
 .footer-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   margin-bottom: 20px;
@@ -1281,6 +1311,11 @@ menu-close:hover .menu-icon-close {
 }
 .footer-input:focus {
   border: 1px solid var(--hover-color);
+}
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-input {
