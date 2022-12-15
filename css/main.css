@@ -529,6 +529,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .menu-close {
@@ -1089,7 +1090,7 @@ menu-close:hover .menu-icon-close {
 
 .portfolio-overlay {
   position: relative;
-  width: 450px;
+  max-width: 450px;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
